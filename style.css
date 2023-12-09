@@ -1,0 +1,105 @@
+:root {
+    margin: 0;
+    font-size: 16px;
+    --primary-color: #161A30;
+    --secondary-color: #31304D;
+    --accent-color: #a5bae0; 
+    --svg-color: #434d8f9a;
+    --text-color: #F0ECE5;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+
+body {
+    margin: 100px 0px 0px 0px;
+    background-color: var(--primary-color);
+}
+
+.scoreWrap {
+    display: flex;
+    justify-content: right;
+    margin: 0 100px;
+    padding-bottom: 10px;
+}
+
+.holding {
+   /* background-color: var(--secondary-color);*/
+    margin: 0 20%;
+    z-index: 2;
+    padding: 90px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+}
+
+
+/* .holding h1, .holding p, .holding input {
+    position: relative;
+    z-index: 1;
+} */
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-size: 3.5em;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+p {
+    margin: 0 0px 40px 0;
+    font-size: 2.5em;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.userInput {
+    height: 60px;
+    width: 30%;
+    font-size: 3em;
+}
+
+#uSubmit {
+    margin: 25px 0;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #504f77;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#uSubmit:hover {
+    background-color: #504f778c;
+}
+
+.rule {
+    color: var(--accent-color);
+}
+
+#jsresponse {
+     color: var(--text-color);
+     font-size: 3em;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out; /* You can adjust the duration and timing function as needed */
+  }

@@ -1,0 +1,18 @@
+.star-wrapper {
+    position: relative;
+    z-index: 1; /* Set a positive z-index value for the stacking context */
+}
+
+.star {
+    transition: transform 1s;
+    position: absolute;
+    top: -50px;
+    left: 69%;
+    overflow: hidden;
+    filter: drop-shadow(0 0 5px rgb(6, 63, 128));
+}
+
+.star:hover {
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 10px rgb(88, 236, 255));
+}
