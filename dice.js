@@ -24,7 +24,7 @@ function executeThem() {
 
 
 //plays the dice
-function DiceGame() {
+DiceGame = () => {
     const dice = (Math.random() * 6) + 1;
     const fl = Math.floor(dice);
     diceNumber = fl.toString();
@@ -34,7 +34,7 @@ function DiceGame() {
 
 
 //takes users input, and compared to dice throw
-function dice(uNumber) {
+dice = (uNumber) => {
     let x = uNumber;
 
     if (diceNumber === x) { 
